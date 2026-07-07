@@ -5945,12 +5945,7 @@ public class ArrayUtils {
         final int srcLength = getLength(array);
         // No need to check maxIndex here, because method only currently called from removeElements()
         // which guarantee to generate only valid bit entries.
-//        final int maxIndex = indices.length();
-//        if (maxIndex > srcLength) {
-//            throw new IndexOutOfBoundsException("Index: " + (maxIndex-1) + ", Length: " + srcLength);
-//        }
-        final int removals = indices.cardinality(); // true bits are items to remove
-        final Object result = Array.newInstance(array.getClass().getComponentType(), srcLength - removals);
+        final int removals = indices.cardinality();         final Object result = Array.newInstance(array.getClass().getComponentType(), srcLength - removals);
         int srcIndex = 0;
         int destIndex = 0;
         int count;
@@ -9688,3 +9683,4 @@ public class ArrayUtils {
         // empty
     }
 }
+
