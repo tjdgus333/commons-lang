@@ -90,8 +90,6 @@ public class CharSequenceUtils {
 //            return ((String) cs).indexOf((String) searchChar, start);
 //        } else {
 //            // TODO: Implement rather than convert to String
-//            return cs.toString().indexOf(searchChar.toString(), start);
-//        }
     }
 
     /**
@@ -442,3 +440,4 @@ public class CharSequenceUtils {
         // empty
     }
 }
+
