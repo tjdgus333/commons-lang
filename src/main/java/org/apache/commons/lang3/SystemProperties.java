@@ -3939,8 +3939,7 @@ public final class SystemProperties {
             // We are not allowed to look at this property.
             //
             // System.err.println("Caught a SecurityException reading the system property '" + property
-            // + "'; the SystemUtils property value will default to null.");
-            return defaultIfAbsent.get();
+                        return defaultIfAbsent.get();
         }
     }
 
@@ -4282,3 +4281,4 @@ public final class SystemProperties {
         // empty
     }
 }
+
