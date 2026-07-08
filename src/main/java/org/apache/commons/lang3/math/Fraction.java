@@ -378,8 +378,7 @@ public final class Fraction extends Number implements Comparable<Fraction> {
         // t negative: u was odd, v may be even (t replaces v)
         // t positive: u was even, v is odd (t replaces u)
         do {
-            /* assert u<0 && v<0; */
-            // B4/B3: cast out twos from t.
+                        // B4/B3: cast out twos from t.
             while ((t & 1) == 0) { // while t is even.
                 t /= 2; // cast out twos
             }
@@ -922,3 +921,4 @@ public final class Fraction extends Number implements Comparable<Fraction> {
         return toString;
     }
 }
+
