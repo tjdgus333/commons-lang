@@ -1044,8 +1044,7 @@ public class TypeUtils {
         if (type instanceof ParameterizedType) {
             // the raw type of a parameterized type is never an array or
             // generic array, otherwise the declaration would look like this:
-            // Collection[]< ? extends String > collection;
-            return false;
+                        return false;
         }
         throw new IllegalStateException("found an unhandled type: " + type);
     }
@@ -1790,3 +1789,4 @@ public class TypeUtils {
     }
 
 }
+
