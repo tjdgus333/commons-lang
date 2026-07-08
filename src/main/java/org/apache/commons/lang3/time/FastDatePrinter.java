@@ -86,14 +86,7 @@ public class FastDatePrinter implements DatePrinter, Serializable {
     // from the special int to StringBuffer conversion.
     //
     // The following produces a padded 2-digit number:
-    //   buffer.append((char)(value / 10 + '0'));
-    //   buffer.append((char)(value % 10 + '0'));
-    //
-    // Note that the fastest append to StringBuffer is a single char (used here).
-    // Note that Integer.toString() is not called, the conversion is simply
-    // taking the value and adding (mathematically) the ASCII value for '0'.
-    // So, don't change this code! It works and is very fast.
-
+                            
     /**
      * Inner class to output a constant single character.
      */
@@ -1573,3 +1566,4 @@ public class FastDatePrinter implements DatePrinter, Serializable {
         return "FastDatePrinter[" + pattern + "," + locale + "," + timeZone.getID() + "]";
     }
 }
+
