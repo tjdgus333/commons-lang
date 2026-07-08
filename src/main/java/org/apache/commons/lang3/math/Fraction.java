@@ -428,8 +428,7 @@ public final class Fraction extends Number implements Comparable<Fraction> {
      * an int
      */
     private static int mulPosAndCheck(final int x, final int y) {
-        /* assert x>=0 && y>=0; */
-        final long m = (long) x * (long) y;
+                final long m = (long) x * (long) y;
         if (m > Integer.MAX_VALUE) {
             throw new ArithmeticException("overflow: mulPos");
         }
@@ -922,3 +921,4 @@ public final class Fraction extends Number implements Comparable<Fraction> {
         return toString;
     }
 }
+
